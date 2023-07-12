@@ -23,5 +23,5 @@ def test_1(modarg):
     #print("  RUN test1 with modarg", modarg)
     assert "  RUN test1 with modarg", modarg
 
-def test_2(otherarg, modarg):
+def test_2(otherarg, modarg, tc_setup_auto):
     assert f"  RUN test2 with otherarg {otherarg} and modarg {modarg}"
